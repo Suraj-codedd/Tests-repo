@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Software Engineers News Magazine</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/main.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/skin.css" />
+<script type="text/javascript" src="javascript/cufon-yui.js"></script>
+<script type="text/javascript" src="javascript/font.font.js"></script>
+<script type="text/javascript">
+Cufon.replace('h1, h2, h3, h4, h5, h6', {
+    hover: true
+});
+</script>
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div class="main">
+  <div id="header" class="box">
+    <h1 id="logo">Welcome<span><?php echo $id ?></span></h1>
+    <ul id="nav">
+             <li class="current"><a href="news_reporter.html">Authors Page</a></li>
+      <li><a href="layout.html">Delete Post</a></li>
+      <li><a href="#">Blog</a></li>
+       <li><a href="#">contact</a></li>
+    </ul>
+  </div>
+  <div id="section" class="box">
+    <div id="content">
+      <ul class="articles box">
+        <li>
+          <h2><a href="#">Uploading New Post</a></h2>
+          <div class="article-info box">
+          </div>
+<p>Enter Information of Your news posts</p>
+<div id="upload_form">
+<form id="upload_form" name="upload_form"enctype="multipart/form-data" method="post" action="$upload"
+ <input type="hidden" name="MAX_FILE_SIZE" value="5000"  />
+ <p>Upload This file: <input name="uploaded" type="file" /></p>
+ <label for="textfield2">News Title</label>
+ <input name="admno" type="text" id="admno" size="20" maxlength="20" class="required" />
+ <p>Upload News Photo: <input name="uploaded" type="file" /></p>
+ <input name="photo" type="image" src="browse"style="width:60px;height:80px;">
+ <div>
+<input type="submit" name="submit" id="submit" value="Upload" />
+<input type="reset" name="button" id="button" value="CANCEL" />
+  </form>
+</div>
+</div>
+
+    </div>
+    <div id="aside">
+      <form action="#" method="get" id="search">
+        <p>
+          <input type="text" size="20" class="input-text" value="Search my Page" onfocus="if(this.value=='Search my page') this.value=''" />
+          <input type="submit" value="Search" class="input-submit" />
+        </p>
+      </form>
+      <h3>Sidebar Menu</h3>
+      <ul class="menu">
+        <li><a href="#">Discussion</a></li>
+        <li><a href="#">Authors</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h3><?php $name ?>AUTHOR</h3>
+      <p class="box"> <img src="tmp/adminpic.jpg"alt="" class="f-left" /><br />
+         </p>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="main box">
+    <p class="f-right t-right">Design by <a href="http://www.collegeportal.com/">Usman Suraj</a></p>
+    <p class="f-left">Copyright &copy;&nbsp;2016 <a href="#">Software Engineers Magazine</a></p>
+  </div>
+</div>
+<script type="text/javascript">Cufon.now();</script>
+<!-- END PAGE SOURCE -->
+</body>
+</html>
+
+
+<!-- END PAGE SOURCE -->
+</body>
+</html>
